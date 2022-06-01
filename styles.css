@@ -8,7 +8,7 @@ body{
     color:white;
 }
 .container-fluid{
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
 }
 h1{
     font-family: "Montserrat",sans-serif;
@@ -22,6 +22,7 @@ h2{
     font-size: 3rem;
     line-height: 1.5;
 }
+
 /*Navigation bar*/
 .navbar{
     padding: 0 0 4.5rem;
@@ -45,11 +46,14 @@ h2{
 }
 /*Title image*/
 .title-image{
-    width:60%;
     transform: rotate(25deg);
-}/*Features section*/
+    position:absolute;
+}
+/*Features section*/
 #features{
-    padding: 7% 15%;  
+    background-color: #fff;
+    padding: 7% 15%; 
+    position:relative; 
 }
 .feature-box{
     text-align: center;
@@ -101,4 +105,35 @@ h3{
 }
 .pricing-column{
     padding:3% 2%;
+}
+/*cta section*/
+#cta{
+    background-color: #ff4c68;
+    color:#fff;
+    padding:7% 15%;
+    text-align: center;
+}
+.cta-heading{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+/*Footer section*/
+#footer{
+    padding:7% 15%;
+    text-align: center;
+}
+.social-icon{
+    margin:20px 10px;
+}
+@media (max-width:1020px)
+{
+    #title{
+        text-align:center;
+    }
+    .title-image{
+        position:static;
+        transform: rotate(0);
+    }
 }
